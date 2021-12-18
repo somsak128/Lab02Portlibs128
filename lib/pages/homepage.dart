@@ -31,11 +31,12 @@ class HomePage extends StatelessWidget {
           imageme(),
           benz(),
 
-          
         ],
         ),
     );
   }
+
+
 
   Container card() {
     return Container(
@@ -63,7 +64,7 @@ class HomePage extends StatelessWidget {
       padding: const EdgeInsets.all(8),
       child: Column(
         children: const [
-          FaIcon(FontAwesomeIcons.stopwatch,
+          FaIcon(FontAwesomeIcons.clock,
           size: 30,
           color: Colors.blue,
           ),
@@ -190,7 +191,7 @@ Widget benz1() {
 
   Widget benz() {
     return Padding(
-      padding: const EdgeInsets.only(top: 10),
+      padding: const EdgeInsets.fromLTRB(30, 5, 30, 40),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: const [
@@ -247,7 +248,7 @@ Widget title3() {
 
   Widget title() {
     return Padding(
-      padding: const EdgeInsets.fromLTRB(30,10, 20,10),
+      padding: const EdgeInsets.fromLTRB(30,35, 20,10),
       child: Text('วิธีทำ “ซี่โครงหมูบาร์บีคิวอบชีส” เมนูเด็กหอ ที่ทำได้ในหม้อหุงข้าว',
           style: TextStyle(
             color: Colors.blueGrey[700],
